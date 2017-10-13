@@ -1,0 +1,99 @@
+---
+title: "Data Science: R Basics"
+output: html_notebook
+---
+
+# Getting Started
+
+R es un ambiente interactivo que permite realizar análisis de datos. 
+
+**Ventajas**
+  - scripts: reproducible
+  - open source
+  - varias IDE's
+  - paquetes
+  
+El paquete del curso es dslabs
+
+```{r}
+install.packages("dslabs")
+library(dslabs)
+```
+
+# Básico
+
+**Objetos** se asignan con <-
+
+Pueden ser simples como variables, por ejemplo
+```{r}
+a <- 1
+b <- 1
+c <- -1
+```
+Para ver una variable
+```{r}
+a
+```
+
+Para ver que hay en la memoria
+```{r}
+ls()
+```
+ 
+Una vez que se definen las variables, el proceso de análisis de datos corresponde a una serie de funciones que se aplican a los datos. 
+
+Las funciones hacen cualquier cosa, por ejemplo *sqr* extrae la raíz cuadrada, por ejemplo de un número como 35
+
+```{r}
+sqrt(35)
+```
+ o de uno o varios objetos
+```{r}
+sqrt(a+b)
+```
+ 
+Para ver una función, la tipeamos sin (), por ejemplo
+
+```{r}
+ls
+```
+Para que la función se ejecute, añadimos los paréntesis
+
+```{r}
+ls()
+```
+
+Todas las funciones tienen su ayuda colocando el signo ?
+```{r}
+?ls
+```
+
+Algunos argumentos son necesarios y otros opcionales. Para ver los argumentos de una función, se ocupa la función *args*
+
+```{r}
+args(log)
+```
+
+Existen datos que se pueden utilizar
+
+```{r}
+data()
+```
+
+Los nombres de variables deben ser legibles y significativos para hacer el código legible. 
+
+Además, se pueden agregar comentarios
+
+```{r}
+variableDeInicio <- 2 # esta es la primera variable
+```
+
+```{r}
+x <- 1000
+x <- seq(1,n)
+sum(x)
+exp(log(x, base = 2))
+```
+
+
+
